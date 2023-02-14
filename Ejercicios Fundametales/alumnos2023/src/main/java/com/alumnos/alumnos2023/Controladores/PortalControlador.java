@@ -12,8 +12,21 @@ public class PortalControlador {
     //Mapeara el acceso a la url
     @GetMapping("/")
     public String index() {
-        
+
         //Luego devolvemos la vista que queremos ver
         return "index.html";
     }
+
+    @GetMapping("/registrar")
+    public String registrar() {
+
+        return "registro.html";
+    }
+    
+    @GetMapping("/login")
+    public String login() {
+
+        return "login.html";
+    }
+    //Seguimos en el video Servicio Usuario
 }
